@@ -1,0 +1,51 @@
+version: '1.0'
+region: 'Europe'
+jurisdiction: 'European Union'
+sources:
+  - source_id: "550e8400-e29b-41d4-a716-446655440002"
+    name: "EU AI Act"
+    description: "European Union Artificial Intelligence Act and related documents"
+    source_type: "static_pdf"
+    fetch_method: "direct_download"
+    base_url: "https://eur-lex.europa.eu"
+    endpoints:
+      - "/legal-content/EN/TXT/PDF/?uri=CELEX:32024R1689"
+    headers:
+      User-Agent: "ComplianceBot/1.0"
+    request_timeout: 45
+    max_retries: 3
+    retry_delay: 2.0
+    fetch_frequency: "monthly"
+    jurisdiction: "European Union"
+    regulation_type: "ai_governance"
+    tags:
+      - "eu"
+      - "ai_act"
+      - "regulation"
+      - "governance"
+    priority: 10
+    is_active: true
+
+  - source_id: "550e8400-e29b-41d4-a716-446655440007"
+    name: "GDPR and AI Guidance"
+    description: "EDPB guidance on AI and data protection"
+    source_type: "static_pdf"
+    fetch_method: "direct_download"
+    base_url: "https://edpb.europa.eu"
+    endpoints:
+      - "/our-work-tools/documents/public-consultations"
+    headers:
+      User-Agent: "ComplianceBot/1.0"
+    request_timeout: 30
+    max_retries: 3
+    retry_delay: 1.0
+    fetch_frequency: "monthly"
+    jurisdiction: "European Union"
+    regulation_type: "data_protection"
+    tags:
+      - "gdpr"
+      - "edpb"
+      - "ai"
+      - "data_protection"
+    priority: 8
+    is_active: true 

@@ -1,0 +1,51 @@
+version: '1.0'
+region: 'International'
+jurisdiction: 'Global'
+sources:
+  - source_id: "550e8400-e29b-41d4-a716-446655440005"
+    name: "ISO/IEC AI Standards"
+    description: "ISO/IEC standards related to AI and machine learning"
+    source_type: "document_library"
+    fetch_method: "web_scraping"
+    base_url: "https://www.iso.org"
+    endpoints:
+      - "/search.html?q=artificial%20intelligence"
+    headers:
+      User-Agent: "ComplianceBot/1.0"
+    request_timeout: 30
+    max_retries: 2
+    retry_delay: 1.0
+    fetch_frequency: "quarterly"
+    jurisdiction: "International"
+    regulation_type: "technical_standard"
+    tags:
+      - "iso"
+      - "iec"
+      - "standards"
+      - "ai"
+    priority: 6
+    is_active: false
+
+  - source_id: "550e8400-e29b-41d4-a716-446655440003"
+    name: "Future of Privacy Forum"
+    description: "FPF AI and privacy-related research and reports"
+    source_type: "web_scraper"
+    fetch_method: "web_scraping"
+    base_url: "https://fpf.org"
+    endpoints:
+      - "/blog/"
+    headers:
+      User-Agent: "ComplianceBot/1.0"
+    request_timeout: 30
+    max_retries: 2
+    retry_delay: 1.5
+    fetch_frequency: "weekly"
+    jurisdiction: "Global"
+    regulation_type: "privacy_advocacy"
+    tags:
+      - "fpf"
+      - "privacy"
+      - "ai"
+      - "research"
+    priority: 7
+    is_active: true 

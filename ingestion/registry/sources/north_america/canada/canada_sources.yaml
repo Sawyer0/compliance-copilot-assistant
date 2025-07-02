@@ -1,0 +1,27 @@
+version: '1.0'
+region: 'North America'
+jurisdiction: 'Canada'
+sources:
+  - source_id: "550e8400-e29b-41d4-a716-446655440008"
+    name: "Canadian AI Governance Framework"
+    description: "Government of Canada AI and Data Commissioner guidance"
+    source_type: "static_pdf"
+    fetch_method: "direct_download"
+    base_url: "https://ised-isde.canada.ca"
+    endpoints:
+      - "/site/artificial-intelligence/en/artificial-intelligence-data-commissioner-guidance"
+    headers:
+      User-Agent: "ComplianceBot/1.0"
+    request_timeout: 30
+    max_retries: 3
+    retry_delay: 1.0
+    fetch_frequency: "monthly"
+    jurisdiction: "Canada"
+    regulation_type: "ai_governance"
+    tags:
+      - "canada"
+      - "ai_governance"
+      - "data_commissioner"
+      - "framework"
+    priority: 8
+    is_active: true 

@@ -1,0 +1,27 @@
+version: '1.0'
+region: 'Asia Pacific'
+jurisdiction: 'Singapore'
+sources:
+  - source_id: "550e8400-e29b-41d4-a716-446655440009"
+    name: "Singapore Model AI Governance Framework"
+    description: "PDPC Model AI Governance Framework and guidance"
+    source_type: "static_pdf"
+    fetch_method: "direct_download"
+    base_url: "https://www.pdpc.gov.sg"
+    endpoints:
+      - "/Help-and-Resources/2020/01/Model-AI-Governance-Framework"
+    headers:
+      User-Agent: "ComplianceBot/1.0"
+    request_timeout: 30
+    max_retries: 3
+    retry_delay: 1.0
+    fetch_frequency: "monthly"
+    jurisdiction: "Singapore"
+    regulation_type: "ai_governance"
+    tags:
+      - "singapore"
+      - "pdpc"
+      - "ai_governance"
+      - "framework"
+    priority: 7
+    is_active: true 

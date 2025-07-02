@@ -1,0 +1,27 @@
+version: '1.0'
+region: 'Europe'
+jurisdiction: 'United Kingdom'
+sources:
+  - source_id: "550e8400-e29b-41d4-a716-446655440006"
+    name: "UK AI White Paper"
+    description: "UK government AI regulation white paper and guidance"
+    source_type: "static_pdf"
+    fetch_method: "direct_download"
+    base_url: "https://www.gov.uk"
+    endpoints:
+      - "/government/publications/ai-regulation-a-pro-innovation-approach"
+    headers:
+      User-Agent: "ComplianceBot/1.0"
+    request_timeout: 30
+    max_retries: 3
+    retry_delay: 1.0
+    fetch_frequency: "monthly"
+    jurisdiction: "United Kingdom"
+    regulation_type: "white_paper"
+    tags:
+      - "uk"
+      - "white_paper"
+      - "ai"
+      - "regulation"
+    priority: 7
+    is_active: true 
