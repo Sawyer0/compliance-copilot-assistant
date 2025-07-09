@@ -32,7 +32,7 @@ sources:
     description: "US Executive Order on AI and related guidance"
     source_type: "static_html"
     fetch_method: "direct_download"
-    base_url: "https://www.whitehouse.gov"
+    base_url: "https://bidenwhitehouse.archives.gov"
     endpoints:
       - "/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/"
     headers:
@@ -58,8 +58,8 @@ sources:
     fetch_method: "direct_download"
     base_url: "https://www.ftc.gov"
     endpoints:
-      - "/business-guidance/blog/2023/02/keep-your-ai-claims-check"
-      - "/policy/reports/policy-reports/aiming-truth-fairness-equity-your-companys-use-ai"
+      - "/news-events/news/press-releases/2023/02/ftc-warns-companies-against-using-artificial-intelligence-deceive-or-harm-consumers"
+      - "/policy-guidance/policy-statements/ftc-policy-statement-biometric-information-and-section-5-ftc-act"
     headers:
       User-Agent: "ComplianceBot/1.0"
     request_timeout: 30

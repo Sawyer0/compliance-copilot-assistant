@@ -8,8 +8,8 @@ from uuid import UUID
 
 from pydantic import BaseModel
 
-from ..core.logging import get_logger
-from ..models.document import DocumentContent, DocumentFormat
+from core.logging import get_logger
+from models.document import DocumentContent, DocumentFormat
 
 logger = get_logger(__name__)
 

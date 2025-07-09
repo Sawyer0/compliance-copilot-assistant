@@ -9,8 +9,8 @@ from PIL import Image
 import pytesseract
 
 from .base_parser import BaseParser, ParseResult
-from ..core.config import get_settings
-from ..models.document import DocumentContent
+from core.config import get_settings
+from models.document import DocumentContent
 
 
 class OCRParser(BaseParser):

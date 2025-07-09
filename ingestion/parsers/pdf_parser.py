@@ -9,7 +9,7 @@ import pdfplumber
 from PIL import Image
 
 from .base_parser import BaseParser, ParseResult
-from ..models.document import DocumentContent
+from models.document import DocumentContent
 
 
 class PDFParser(BaseParser):
